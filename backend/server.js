@@ -11,7 +11,7 @@ const port = process.env.PORT || 8000;
 app.use("/", router);
 
 const openai = new OpenAI({
-  organization: "org-waI2WDF6l3fVqNOGkv1aYF4i",
+  organization: process.env.ORGANISATION,
   apiKey: process.env.OPENAI_API_KEY,
 });
 
